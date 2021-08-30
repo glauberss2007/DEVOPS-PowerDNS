@@ -188,6 +188,8 @@ chown -R apache:apache /var/www/html/poweradmin
 
 10. Acesse a URL http://your-server-ip/poweradmin/install para concluir a instalação pela interface grafica ([GUI conf](https://www.atlantic.net/vps-hosting/how-to-install-powerdns-and-poweradmin-on-centos-8/))
 
+PS: Caso ocorra erro de acesso via URL, pode ser necessario executar o comando ``setenforce 1`` e alterar os campos para, AllowOverride All e Require all granted, em ``/etc/httpd/conf/httpd.conf`` no <Directory "/var/www"> 
+
 Referencias:
 
 https://doc.powerdns.com/
